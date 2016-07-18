@@ -1,0 +1,10 @@
+[
+  {
+    "id": "calendar.toBooking",
+    "defaultMessage": "to booking"
+  },
+  {
+    "id": "calendar.booked",
+    "defaultMessage": "booked"
+  }
+]

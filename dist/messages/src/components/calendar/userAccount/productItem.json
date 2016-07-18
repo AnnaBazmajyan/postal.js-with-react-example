@@ -1,0 +1,22 @@
+[
+  {
+    "id": "app.Expire",
+    "defaultMessage": "Expire"
+  },
+  {
+    "id": "app.LastUsed",
+    "defaultMessage": "Last time used"
+  },
+  {
+    "id": "app.Expires",
+    "defaultMessage": "Expires"
+  },
+  {
+    "id": "app.Renew",
+    "defaultMessage": "Renew"
+  },
+  {
+    "id": "app.BuyAgain",
+    "defaultMessage": "Buy again"
+  }
+]

@@ -1,0 +1,7 @@
+[
+  {
+    "id": "app.GoBack",
+    "description": "Text of the back button",
+    "defaultMessage": "Back"
+  }
+]

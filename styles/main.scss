@@ -1,0 +1,311 @@
+//custom styles here
+@import 'vendor/bootstrap-datetimepicker.min.css';
+@import 'base/all';
+@import 'components/all';
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700,600);
+[class*="container-"] { padding-left: 15px; padding-right: 15px; }
+.container-280 {
+  margin: auto;
+  max-width: 280px;
+}
+.container-300 {
+  margin: auto;
+  max-width: 300px;
+}
+.container-380 {
+  margin: auto;
+  max-width: 380px;
+}
+.container-970 {
+  margin: auto;
+  max-width: 970px;
+}
+.container-1000 {
+  margin: auto;
+  max-width: 1000px;
+}
+
+.underline {text-decoration: underline;}
+.calendar-bg-grey {background: #EAEAEA;}
+.bg-inherit {background: inherit;}
+.display-block {display: block!important;}
+.display-inline-block {display: inline-block;}
+
+.row.no-space {
+    margin-left: 0;
+    margin-right: 0;
+}
+.row.no-space [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+}
+.pl15 {
+  padding-right: 15px;
+}
+.ml15 {margin-left: 15px;}
+.m30 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.p30 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.mb30 {
+  margin-bottom: 30px;
+}
+.mt10 {
+  margin-top: 10px;
+}
+.blue {
+  color: $brand-color;
+}
+.btn-brand {
+  background: $brand-color;
+  border: 2px solid $brand-color;
+  color: white;
+}
+.btn-brand:hover,
+.btn-brand:focus {
+  background: white;
+  border: 2px solid $brand-color;
+  color: $brand-color;
+}
+.btn-brand-border {
+  background: white;
+  border: 2px solid $brand-color;
+  color: #000;
+}
+.btn-brand-border:hover,
+.btn-brand-border:focus {
+  background: $brand-color;
+  border: 2px solid $brand-color;
+  color: white;
+}
+
+.btn-green {
+  background: #00CC66;
+  border: 2px solid #7ED321;
+  color: white;
+}
+.btn-green:hover,
+.btn-green:focus {
+  background: white;
+  border: 2px solid #00CC66;
+  color: #00CC66;
+}
+.btn-white-border {
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+}
+.btn-white-border:hover,
+.btn-white-border:focus {
+  background: white;
+  border: 1px solid transparent;
+  color: $brand-color;
+}
+.no-padding { padding: 0!important; }
+.no-radius { border-radius: 0!important; }
+.btn-md {
+  font-size: 15px;
+  padding: 8px 52px;
+  height: initial;
+}
+
+.light-grey { color: $light-grey ; }
+.text-small {
+  font-size: 10px;
+  line-height: 13px;
+}
+/*overwrite bootstrap*/
+.signup-container .bootstrap-datetimepicker-widget th.prev .glyphicon-chevron-left,
+.signup-container .bootstrap-datetimepicker-widget th.next .glyphicon-chevron-right {
+    font-size: 14px;
+}
+
+.user-settings-login-btn .btn {
+    height: initial;
+}
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+    .switch-text {margin-left: 4px;}
+    .widget-container {
+      padding-bottom: 50px;
+      font-size: 62.5%;
+      font: 13px $font-stack;
+      color: $primary-color;
+      line-height: 1.5;
+      background: white;
+    }
+    body {
+      background: white;
+    }
+    /*html {
+      font-size: 62.5%;
+    }
+    body {
+      font: 1.3rem $font-stack;
+      color: $primary-color;
+      line-height: 1.5;
+      background: white;
+    }*/
+    h2.line-with-text {
+      width: 100%;
+      text-align: center;
+      border-bottom: 1px solid #000;
+      line-height: 0.1em;
+      font-size: 16px;
+      margin: 25px 0 30px 0;
+      span {
+        background: inherit;
+        padding: 0 10px;
+      }
+    }
+    .sign-in-facebook .fa-facebook {
+      font-size: 16px;
+      padding-right: 10px;
+      line-height: 20px;
+    }
+
+    .table-borderless tbody tr td,
+    .table-borderless tbody tr th,
+    .table-borderless thead tr th,
+    .table-borderless tfoot tr td {
+      border: none;
+    }
+    .btn-back {
+      position: absolute;
+      left: 0;
+      top: 0;
+      padding: 10px 5px;
+      z-index: 2;
+    }
+    .progressBar {
+      transition: all 0.2s ease;
+    }
+    .input-group .form-control { z-index: 0; }
+    .btn-long {
+      font-size: 13px;
+      padding: 2px 20px;
+    }
+    /*gender selection*/
+    .gender-selection.input-group-addon {
+      padding: .1em .4em;
+      label {
+        margin-bottom: 0;
+        display: inline-block;
+      }
+      input[type=radio] {
+        /* original check box are push outside the viexport */
+        position: absolute;
+        left: -1000em;
+      }
+      input[type=radio] + label:before {
+        content: "";
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin: 0;
+        opacity: .3;
+        background-image: url("../src/images/gender_icon.png");
+        background-repeat: no-repeat;
+      }
+      input#Mrs + label:before {
+        background-position: 0 0;
+      }
+      input#Mr + label:before {
+        background-position: 0 -20px;
+      }
+      input[type=radio]:checked + label:before {
+        opacity: 1;
+      }
+      input[type=radio]:focus + label:before {
+        outline: none;
+      }
+    }
+
+    .settings-container { padding: 0; }
+    .settings-form { padding: 0 15px; }
+
+    .copyright-container {
+      margin-top: 10px;
+      a {
+        background: rgba(238,237,237,0.83);
+        border: 0px solid #EAEAEA;
+        box-shadow: inset 0px 1px 2px 0px rgba(119,119,119,0.50);
+        font-size: 9px;
+        color: #000000;
+        padding: 2px 12px;
+      }
+    }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+  .switch-text {margin-left: 0;}
+  .horizontal-seperator {
+    margin-right: 10px;
+  }
+  .widget-container {
+    background: #F7F7F7;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background: #F7F7F7;
+    color: #2a2a2a;
+
+    direction: ltr;
+    text-align: left;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+  }
+  body {
+    background: #F7F7F7;
+    color: #2a2a2a;
+  }
+  /*body {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    background: #F7F7F7;
+    color: #2a2a2a;
+  }*/
+  .blue-oval {
+    background: $brand-color;
+    border: 3px solid white;
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    margin: -30px auto 0 auto;
+  }
+  .btn-back {
+    position: inherit;
+  }
+  .custom-dialog .modal-sm {
+    width: 400px;
+  }
+  .btn-long {
+    padding: 2px 24px;
+  }
+  .settings-container { padding: 0 15px; }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+  .switch-text {margin-left: 4px;}
+  .horizontal-seperator {
+    margin-right: 38px;
+  }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}

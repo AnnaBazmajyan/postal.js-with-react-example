@@ -1,0 +1,10 @@
+[
+  {
+    "id": "app.toList",
+    "defaultMessage": "to list"
+  },
+  {
+    "id": "app.toCalendar",
+    "defaultMessage": "to calendar"
+  }
+]

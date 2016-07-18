@@ -1,0 +1,10 @@
+[
+  {
+    "id": "checkout.Fail",
+    "defaultMessage": "Failed!"
+  },
+  {
+    "id": "app.BackToCalendar",
+    "defaultMessage": "Back to calendar"
+  }
+]

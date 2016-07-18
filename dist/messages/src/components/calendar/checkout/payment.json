@@ -1,0 +1,14 @@
+[
+  {
+    "id": "checkout.PaymentWithPaypalTitle",
+    "defaultMessage": "Payment with PayPal"
+  },
+  {
+    "id": "checkout.PaymentWithCashTitle",
+    "defaultMessage": "Cash Payment"
+  },
+  {
+    "id": "checkout.payment.cash.description",
+    "defaultMessage": "Payment can be done in the course."
+  }
+]

@@ -1,0 +1,78 @@
+[
+  {
+    "id": "detail.bookingTimeFrom",
+    "defaultMessage": "Booking at"
+  },
+  {
+    "id": "detail.bookingTimeTo",
+    "defaultMessage": "Booking until:"
+  },
+  {
+    "id": "app.CoursInformation",
+    "defaultMessage": "Cours information"
+  },
+  {
+    "id": "app.TrainerInformation",
+    "defaultMessage": "Trainer information"
+  },
+  {
+    "id": "app.AreYouAMember",
+    "description": "Shown at the top left if the user is not logged in",
+    "defaultMessage": "Are you a member?"
+  },
+  {
+    "id": "app.LogIn",
+    "description": "Log in button text",
+    "defaultMessage": "Log In"
+  },
+  {
+    "id": "detail.AreYouANewClient",
+    "description": "Shown on the details page to ask if you are a new client?",
+    "defaultMessage": "Are you a new client?"
+  },
+  {
+    "id": "detail.SelectAnOfferBelow",
+    "description": "Shown on the details page to ask a new client to select an offer?",
+    "defaultMessage": "Select an offer below"
+  },
+  {
+    "id": "detail.ThisCourseIsAlreadyBooked",
+    "defaultMessage": "Diesen Kurs hast Du bereits gebucht."
+  },
+  {
+    "id": "detail.WannaCancelBooking",
+    "defaultMessage": "Wanna undo your booking click the cancel button below."
+  },
+  {
+    "id": "app.Cancel",
+    "defaultMessage": "Cancel"
+  },
+  {
+    "id": "details.isBookedandNotCancelable",
+    "defaultMessage": "Diesen Kurs hast Du bereits gebucht."
+  },
+  {
+    "id": "detail.ConfirmYourBooking",
+    "defaultMessage": "Confirm your booking"
+  },
+  {
+    "id": "detail.pastEvent",
+    "defaultMessage": "This event is in the past and cant be booked anymore"
+  },
+  {
+    "id": "account.AreYouSureYouWantToCancelYourBooking",
+    "defaultMessage": "Are you sure you want to cancel your booking?"
+  },
+  {
+    "id": "account.YouWillGetYourCreditBack",
+    "defaultMessage": "You will get your credit back"
+  },
+  {
+    "id": "app.Abort",
+    "defaultMessage": "Abort"
+  },
+  {
+    "id": "account.ConfirmCancelation",
+    "defaultMessage": "Confirm cancelation"
+  }
+]

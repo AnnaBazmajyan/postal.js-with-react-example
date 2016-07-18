@@ -1,0 +1,17 @@
+[
+  {
+    "id": "app.morning",
+    "description": "",
+    "defaultMessage": "Morning"
+  },
+  {
+    "id": "app.afternoon",
+    "description": "",
+    "defaultMessage": "Afternoon"
+  },
+  {
+    "id": "app.evening",
+    "description": "",
+    "defaultMessage": "Evening"
+  }
+]

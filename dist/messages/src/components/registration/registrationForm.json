@@ -1,0 +1,14 @@
+[
+  {
+    "id": "register.REGISTER",
+    "defaultMessage": "REGISTER"
+  },
+  {
+    "id": "register.NavigateTo",
+    "defaultMessage": "navigate to"
+  },
+  {
+    "id": "app.Login",
+    "defaultMessage": "Log in"
+  }
+]

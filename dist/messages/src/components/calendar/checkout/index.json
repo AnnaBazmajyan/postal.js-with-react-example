@@ -1,0 +1,11 @@
+[
+  {
+    "id": "app.EmailInvalid",
+    "description": "Shown when an email doesn't have the right format",
+    "defaultMessage": "Email is invalid"
+  },
+  {
+    "id": "checkout.wrongIBAN",
+    "defaultMessage": "The IBAN number is not valid"
+  }
+]

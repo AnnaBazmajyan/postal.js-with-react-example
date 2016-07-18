@@ -1,0 +1,18 @@
+[
+  {
+    "id": "account.AreYouSureYouWantToCancelYourBooking",
+    "defaultMessage": "Are you sure you want to cancel your booking?"
+  },
+  {
+    "id": "account.YouWillGetYourCreditBack",
+    "defaultMessage": "You will get your credit back"
+  },
+  {
+    "id": "app.Abort",
+    "defaultMessage": "Abort"
+  },
+  {
+    "id": "account.ConfirmCancelation",
+    "defaultMessage": "Confirm cancelation"
+  }
+]

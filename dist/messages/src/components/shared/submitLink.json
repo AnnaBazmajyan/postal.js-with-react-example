@@ -1,0 +1,7 @@
+[
+  {
+    "id": "app.PleaseWait",
+    "description": "Text on the buttons when loading",
+    "defaultMessage": "Please wait ..."
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "id": "account.Name",
+    "defaultMessage": "Name"
+  },
+  {
+    "id": "account.Change",
+    "defaultMessage": "Change"
+  },
+  {
+    "id": "account.EMail",
+    "defaultMessage": "E-Mail"
+  },
+  {
+    "id": "account.Password",
+    "defaultMessage": "Password"
+  },
+  {
+    "id": "account.Phonenumber",
+    "defaultMessage": "Phonenumber"
+  }
+]

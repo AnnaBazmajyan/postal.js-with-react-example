@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+  - "4.1"
+
+before_script:
+  - npm install -g gulp
+script: gulp deploy
+
+env:
+  global:
+    - "FTP_USER=fitogram-calendar-alpha"
+    - "FTP_PASSWORD=0pAXfSELfYuGLA1vQT3eXRQXqaj9garFx8RuoxmueJoRAg5EnNuZhzpsReqv"
+after_success:
+    "find dist -type f -exec curl -u $FTP_USER:$FTP_PASSWORD --ftp-create-dirs -T {} ftp://waws-prod-am2-055.ftp.azurewebsites.windows.net/site/wwwroot/{} \\;"

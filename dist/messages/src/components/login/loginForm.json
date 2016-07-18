@@ -1,0 +1,22 @@
+[
+  {
+    "id": "login.WelcomeBack",
+    "description": "Message at login",
+    "defaultMessage": "Welcome back"
+  },
+  {
+    "id": "app.or",
+    "description": "",
+    "defaultMessage": "or"
+  },
+  {
+    "id": "app.LogIn",
+    "description": "Log in button text",
+    "defaultMessage": "Log In"
+  },
+  {
+    "id": "login.ForgotPassword",
+    "description": "",
+    "defaultMessage": "Forgot your password?"
+  }
+]

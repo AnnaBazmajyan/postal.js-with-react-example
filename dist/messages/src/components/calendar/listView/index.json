@@ -1,0 +1,14 @@
+[
+  {
+    "id": "app.listViewTitle",
+    "defaultMessage": "List Course and Classes"
+  },
+  {
+    "id": "app.CoursesList",
+    "defaultMessage": "courses list"
+  },
+  {
+    "id": "app.ClassesList",
+    "defaultMessage": "courses list"
+  }
+]

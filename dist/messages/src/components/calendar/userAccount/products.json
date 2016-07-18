@@ -1,0 +1,14 @@
+[
+  {
+    "id": "products.Active",
+    "defaultMessage": "Active"
+  },
+  {
+    "id": "products.Old",
+    "defaultMessage": "Old"
+  },
+  {
+    "id": "app.emptyPurchases",
+    "defaultMessage": "No purchases yet"
+  }
+]

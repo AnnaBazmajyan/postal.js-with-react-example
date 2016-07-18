@@ -1,0 +1,42 @@
+[
+  {
+    "id": "checkout.CongratulationRegisteredProbetraining",
+    "defaultMessage": "CONGRATULATIONS!"
+  },
+  {
+    "id": "checkout.CongratulationRegistered",
+    "defaultMessage": "CONGRATULATIONS!"
+  },
+  {
+    "id": "checkout.ConfirmationRegisteredProbetraining",
+    "defaultMessage": "Complete your account"
+  },
+  {
+    "id": "checkout.ConfirmationRegistered",
+    "defaultMessage": "Complete your account"
+  },
+  {
+    "id": "checkout.CongratulationProbetraining",
+    "defaultMessage": "CONGRATULATIONS!"
+  },
+  {
+    "id": "checkout.Congratulation",
+    "defaultMessage": "CONGRATULATIONS!"
+  },
+  {
+    "id": "checkout.CompleteNowYourAccountProbetraining",
+    "defaultMessage": "Complete your account"
+  },
+  {
+    "id": "checkout.CompleteNowYourAccount",
+    "defaultMessage": "Complete your account"
+  },
+  {
+    "id": "app.BackToCalendar",
+    "defaultMessage": "Back to calendar"
+  },
+  {
+    "id": "app.Register",
+    "defaultMessage": "Register"
+  }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "id": "checkout.IAcceptThe",
+    "defaultMessage": "I accept the"
+  },
+  {
+    "id": "checkout.SEPA_DirectDebitMandate",
+    "defaultMessage": "SEPA DirectDebit Mandate"
+  },
+  {
+    "id": "checkout.PurchaseOrder",
+    "defaultMessage": "Purchase order"
+  }
+]

@@ -1,0 +1,35 @@
+.languageButtons {
+    font-weight: bold;
+
+    .glyphicon-globe {
+        padding-right: 0.3em;
+    }
+}
+.languageButtons .languageButton,
+.listSwitchButtons .switchButton {
+    background:none;
+    border:none;
+    padding: 0 0.2em;
+    outline:0px;
+    -webkit-appearance:none;
+    line-height: inherit;
+    opacity: 0.5;
+    box-shadow: none;
+}
+.listSwitchButtons button:disabled,
+.languageButtons button:disabled {
+    opacity: 1;
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "id": "account.MyPurchases",
+    "defaultMessage": "My Purchases"
+  },
+  {
+    "id": "account.MyPurchasesMobile",
+    "defaultMessage": "My Appointments"
+  },
+  {
+    "id": "account.MyAppointments",
+    "defaultMessage": "My Appointments"
+  },
+  {
+    "id": "account.MyAppointmentsMobile",
+    "defaultMessage": "My Appointments"
+  },
+  {
+    "id": "account.title.mobile",
+    "defaultMessage": "That’s your account"
+  },
+  {
+    "id": "app.Settings",
+    "defaultMessage": "Settings"
+  }
+]

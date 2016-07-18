@@ -1,0 +1,27 @@
+[
+  {
+    "id": "app.AreYouAMember",
+    "description": "The question if you already have a login",
+    "defaultMessage": "Are you a member?"
+  },
+  {
+    "id": "app.Login",
+    "defaultMessage": "Login"
+  },
+  {
+    "id": "app.Appointments",
+    "defaultMessage": "Appointments"
+  },
+  {
+    "id": "app.Purchases",
+    "defaultMessage": "Purchases"
+  },
+  {
+    "id": "app.Settings",
+    "defaultMessage": "Settings"
+  },
+  {
+    "id": "app.Logout",
+    "defaultMessage": "Logout"
+  }
+]

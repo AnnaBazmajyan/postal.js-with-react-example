@@ -1,0 +1,122 @@
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+  .widget-container {
+    .calendar-header {
+      h1 {
+        font-size: 20px;
+        color: #000!important;
+        line-height: inherit;
+        margin: 0;
+        font-family: "Source Sans Pro", sans-serif;
+        text-transform: none;
+      }
+      .arrowParent a {
+        vertical-align: middle;
+        cursor: pointer;
+        line-height: 6em;
+        color: #333;
+      }
+      .arrowParent a:hover,
+      .arrowParent a:focus {
+        text-decoration: none;
+      }
+    }
+
+    .calendar-content {
+      .event-row {
+        margin-top: 20px;
+        font-size: 13px;
+        h2 {
+          font-size: 14px;
+          font-weight: bold;
+          margin-top: 0;
+          margin-bottom: 8px;
+          padding-bottom: 2px;
+          word-break: break-word;
+        }
+      }
+      .day-time {
+        font-weight: 400;
+        font-size: 14px;
+        color: white;
+        line-height: 26px;
+        text-transform: uppercase;
+        height: 26px;
+        margin-bottom: 0;
+      }
+    }
+    .col-sm-15,
+    .col-md-15,
+    .col-lg-15 {
+        position: relative;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+        float: left;
+        width: 100%;
+    }
+  }
+}
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+  .widget-container {
+    .col-sm-15 {
+      width: 14.2857%;
+    }
+    .calendar-header {
+      .arrowParent {
+        min-width: 2.5em;
+        text-align: center;
+        a {
+          line-height: 4em;
+        }
+      }
+      h1 {
+        font-size: 18px;
+      }
+    }
+    .row-relative {
+      position: relative;
+      background: #fff;
+      margin-bottom: 0;
+    }
+    .col-border {
+      padding-left: 0;
+      position: static;
+    }
+    .col-border:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      border-left: 1px solid rgba(217,216,216,0.75);
+      border-right: 1px solid rgba(217,216,216,0.75);
+    }
+    .col-border-padding{padding-left: 15px;}
+    .calendar-footer {
+      background: #EAEAEA;
+      box-shadow: 1px 8px 6px -3px rgba(155, 154, 155, 0.55);
+      height: 60px;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+    .evening-events-row .col-border-padding {
+      padding-bottom: 60px;
+    }
+    .calendar-content .container {
+      background: #fff;
+    }
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+  .widget-container .calendar-header {
+    .arrowParent {
+      min-width: 4em;
+    }
+    h1 {
+      font-size: 20px;
+    }
+  }
+}

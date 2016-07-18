@@ -1,0 +1,86 @@
+.bookings-container,
+.listView-container {
+  .section {
+    position: relative;
+    width: 100%;
+    button {
+      position: absolute;
+      right: 0;
+      margin: 0;
+      padding: 0;
+      height: 3em;
+      width: 3em;
+      outline: 0;
+      border: 0;
+      background: none;
+      text-indent: -9999%;
+      pointer-events: none;
+      box-shadow: none;
+      &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        height: 12px;
+        width: 3px;
+        border-radius: .2em;
+        background: black;
+        transform-origin: 50%;
+        top: 50%;
+        left: 54%;
+        transition: all .25s ease-in-out;
+        transform: translate(75%, -50%) rotate(45deg);
+      }
+      &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        height: 12px;
+        width: 3px;
+        border-radius: .2em;
+        background: black;
+        transform-origin: 50%;
+        top: 50%;
+        left: 47%;
+        transition: all .25s ease-in-out;
+        transform: translate(-75%, -50%) rotate(-45deg);
+      }
+    }
+  }
+
+  .section.open {
+    button {
+      &:before, &:after {
+        height: 14px;
+      }
+      &:before {
+        transform: translate(100%, -50%) rotate(-45deg);
+        //transform: translate(0%, -50%) rotate(-45deg);
+      }
+      &:after {
+        transform: translate(-100%, -50%) rotate(45deg);
+        //transform: translate(0%, -50%) rotate(45deg);
+      }
+    }
+    .articlewrap {
+      display: block;
+    }
+  }
+
+  .articlewrap {
+    overflow: hidden;
+    transition: all .2s ease-in;
+    display: none;
+  }
+  .sectionhead {
+    background: rgba(234,234,234,0.80);
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.1;
+    padding: 10px 15px;
+    min-height: 42px;
+  }
+
+  /*Move here the ul and li styles*/
+  .seperator { margin-bottom: 40px;}
+}

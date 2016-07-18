@@ -1,0 +1,22 @@
+[
+  {
+    "id": "button.Booked",
+    "description": "unit is fully booked",
+    "defaultMessage": "Booked"
+  },
+  {
+    "id": "calendar.toBooking",
+    "description": "unit can be booked",
+    "defaultMessage": "to booking"
+  },
+  {
+    "id": "button.Bookable",
+    "description": "unit can be booked",
+    "defaultMessage": "Details"
+  },
+  {
+    "id": "button.Waitlist",
+    "description": "unit is fully booked, but the waiting list is enabled",
+    "defaultMessage": "Waitlist"
+  }
+]

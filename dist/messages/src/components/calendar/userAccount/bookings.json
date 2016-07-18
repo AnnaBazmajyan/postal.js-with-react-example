@@ -1,0 +1,30 @@
+[
+  {
+    "id": "account.Upcoming",
+    "defaultMessage": "upcoming"
+  },
+  {
+    "id": "account.Past",
+    "defaultMessage": "past"
+  },
+  {
+    "id": "app.emptyAppointments",
+    "defaultMessage": "No appointments yet."
+  },
+  {
+    "id": "account.AreYouSureYouWantToCancelYourBooking",
+    "defaultMessage": "Are you sure you want to cancel your booking?"
+  },
+  {
+    "id": "account.YouWillGetYourCreditBack",
+    "defaultMessage": "You will get your credit back"
+  },
+  {
+    "id": "app.Abort",
+    "defaultMessage": "Abort"
+  },
+  {
+    "id": "account.ConfirmCancelation",
+    "defaultMessage": "Confirm cancelation"
+  }
+]

@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width = device-width, initial-scale = 1, user-scalable = no">
+  <!-- Latest compiled and minified CSS -->
+  <script src="https://www.paypalobjects.com/js/external/apdg.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <title>Widget Test Page</title>
+</head>
+    <body>
+      <style>
+        body {
+          padding-top: 50px;
+        }
+        .starter-template {
+          padding: 40px 15px;
+          text-align: center;
+        }
+      </style>
+
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Test-Yoga</a>
+          </div>
+          <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#">Calendar</a></li>
+              <li onclick="loadTrials()"><a href="#">Trials</a></li>
+              <li onclick="loadOffers()"><a href="#">Offers</a></li>
+              <li><a href="http://www.google.de">google</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </nav>
+
+
+      <!-- This is the begin of the widget code. -->
+      <div id="widget"></div>
+      <script type='text/javascript' src='/widgets.min.js'></script>
+      <script>Widgets.default.config({ domain: window.location.pathname.split('/')[1], selector: "#widget" }); Widgets.default.calendar.new().render();</script>
+
+      <!-- This is the end of the widget code. -->
+    </body>
+
+    <script>
+        function loadTrials() {
+            Widgets.default.config({ domain: window.location.pathname.split('/')[1], selector: "#widget", trialOnly: true, loginTarget: 'calendar'});
+            Widgets.default.calendar.new().render();
+        };
+
+        function loadOffers() {
+            Widgets.default.config({ domain: window.location.pathname.split('/')[1], selector: "#widget", loginTarget: 'offers' });
+            Widgets.default.calendar.new().render();
+        };
+
+        if (window.location.pathname === '/') {
+            alert('No domain');
+        }
+    </script>
+</html>

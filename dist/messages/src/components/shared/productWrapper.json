@@ -1,0 +1,14 @@
+[
+  {
+    "id": "price.Free",
+    "defaultMessage": "free"
+  },
+  {
+    "id": "app.Book",
+    "defaultMessage": "Book"
+  },
+  {
+    "id": "calendar.toBooking",
+    "defaultMessage": "Details"
+  }
+]

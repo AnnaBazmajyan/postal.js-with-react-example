@@ -1,0 +1,17 @@
+[
+  {
+    "id": "detail.CreditsLeft",
+    "description": "The text after credits left",
+    "defaultMessage": "{creditsLeft} credits left"
+  },
+  {
+    "id": "detail.UsePass",
+    "description": "The text for using a pass",
+    "defaultMessage": "Use {name}"
+  },
+  {
+    "id": "detail.BookNow",
+    "description": "The button to book now",
+    "defaultMessage": "Book now"
+  }
+]

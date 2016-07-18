@@ -1,0 +1,26 @@
+[
+  {
+    "id": "checkout.YourOrder",
+    "defaultMessage": "Your Order"
+  },
+  {
+    "id": "checkout.SumOnce",
+    "defaultMessage": "Sum once"
+  },
+  {
+    "id": "checkout.Total",
+    "defaultMessage": "Total"
+  },
+  {
+    "id": "checkout.inclVAT",
+    "defaultMessage": "incl. VAT"
+  },
+  {
+    "id": "checkout.RegisterOrLoginToSaveYourInformations",
+    "defaultMessage": "Register or login to save your informations."
+  },
+  {
+    "id": "app.Login",
+    "defaultMessage": "Login"
+  }
+]

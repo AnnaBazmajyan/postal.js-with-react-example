@@ -1,0 +1,10 @@
+[
+  {
+    "id": "checkout.RegisterOrLoginToSaveYourInformations",
+    "defaultMessage": "Register or login to save your informations."
+  },
+  {
+    "id": "app.LogIn",
+    "defaultMessage": "Log In"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "detail.closedCourse",
+    "description": "",
+    "defaultMessage": "Closed Course"
+  },
+  {
+    "id": "detail.workshop",
+    "description": "",
+    "defaultMessage": "Workshop"
+  }
+]

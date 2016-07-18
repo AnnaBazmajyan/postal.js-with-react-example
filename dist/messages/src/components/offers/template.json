@@ -1,0 +1,18 @@
+[
+  {
+    "id": "checkout.SumOnce",
+    "defaultMessage": "Sum once"
+  },
+  {
+    "id": "checkout.Total",
+    "defaultMessage": "Total"
+  },
+  {
+    "id": "checkout.inclVAT",
+    "defaultMessage": "incl. VAT"
+  },
+  {
+    "id": "app.Offers",
+    "defaultMessage": "Offers"
+  }
+]

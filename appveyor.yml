@@ -1,0 +1,166 @@
+# ------------------------------------------------------------------------------------------
+# configuration for "master" branch. Build in Release mode, publish npm and deploy to Azure
+# ------------------------------------------------------------------------------------------
+
+-
+  branches:
+    only:
+      - master
+
+  # version format
+  version: 1.0.{build}
+
+  # Test against this version of Node.js
+  environment:
+    nodejs_version: "5.10.1"
+
+  # Install scripts. (runs after repo cloning)
+  install:
+    # Get the latest stable version of Node.js or io.js
+    - ps: Install-Product node $env:nodejs_version
+    # install modules
+    - npm install
+    - npm run deployMaster
+    # Publish npm package
+    - ps: npm version $env:APPVEYOR_BUILD_VERSION
+    - npm publish
+
+  # Post-install test scripts.
+  test_script:
+    # Output useful info for debugging.
+    - node --version
+    - npm --version
+    # run tests
+    - npm test
+
+  artifacts:
+    - path: dist
+      name: dist
+
+  notifications:
+    - provider: Slack
+      auth_token:
+        secure: 6M+VTqBYOhYwIOZ6Ftu8k4uz36GRPLrwaAcd6u1h2TuhkRRaLBmtXpbqw4tWnKn7
+      channel: widget
+
+
+  # Don't actually build because it is not a .net project
+  build: off
+
+# --------------------------------------------------------------------------------------------------
+# configuration for "alpha" branch. Build in Release mode, publish npm in alpha and deploy to Azure
+# --------------------------------------------------------------------------------------------------
+
+-
+  branches:
+    only:
+      - alpha
+
+  # version format
+  version: 1.0.{build}
+
+  # Test against this version of Node.js
+  environment:
+    nodejs_version: "5.10.1"
+
+  # Install scripts. (runs after repo cloning)
+  install:
+    # Get the latest stable version of Node.js or io.js
+    - ps: Install-Product node $env:nodejs_version
+    # install modules
+    - npm install
+    - npm run deployAlpha
+    # Publish npm package
+    - ps: npm version $env:APPVEYOR_BUILD_VERSION
+    - npm publish --tag alpha
+
+  # Post-install test scripts.
+  test_script:
+    # Output useful info for debugging.
+    - node --version
+    - npm --version
+    # run tests
+    - npm test
+
+  artifacts:
+    - path: dist
+      name: dist
+  deploy:
+    provider: FTP
+    protocol: ftp
+    host: waws-prod-am2-055.ftp.azurewebsites.windows.net
+    username: fitogram-calendar-alpha\$fitogram-calendar-alpha
+    password: 0pAXfSELfYuGLA1vQT3eXRQXqaj9garFx8RuoxmueJoRAg5EnNuZhzpsReqv
+    folder: site/wwwroot
+    artifact: #Leave blank to copy all artfacts
+    application: dist
+
+  notifications:
+      - provider: Slack
+        auth_token:
+          secure: 6M+VTqBYOhYwIOZ6Ftu8k4uz36GRPLrwaAcd6u1h2TuhkRRaLBmtXpbqw4tWnKn7
+        channel: widget
+
+  # Don't actually build because it is not a .net project
+  build: off
+
+# --------------------------------------------------------------------------------------------------
+# configuration for "beta" branch. Build in Release mode, publish npm in alpha and deploy to Azure
+# --------------------------------------------------------------------------------------------------
+
+-
+  branches:
+    only:
+      - beta
+
+  # version format
+  version: 1.0.{build}
+
+  # Test against this version of Node.js
+  environment:
+    nodejs_version: "5.10.1"
+
+  # Install scripts. (runs after repo cloning)
+  install:
+    # Get the latest stable version of Node.js or io.js
+    - ps: Install-Product node $env:nodejs_version
+    # install modules
+    - npm install
+    - npm run deployBeta
+    # Publish npm package
+    - ps: npm version $env:APPVEYOR_BUILD_VERSION
+    - npm publish --tag beta
+
+  # Post-install test scripts.
+  test_script:
+    # Output useful info for debugging.
+    - node --version
+    - npm --version
+    # run tests
+    - npm test
+
+  artifacts:
+    - path: dist
+      name: dist
+  deploy:
+    provider: FTP
+    protocol: ftp
+    host: waws-prod-am2-055.ftp.azurewebsites.windows.net
+    username: fitogram-calendar-beta\$fitogram-calendar-beta
+    password: WANLQAhtpdAKAJ6qMQGQBtd8hijh2Hd1ickoMaYodSz5c7GfZ9vTNMpheAE5
+    folder: site/wwwroot
+    artifact: #Leave blank to copy all artfacts
+    application: dist
+
+  notifications:
+      - provider: Slack
+        auth_token:
+          secure: 6M+VTqBYOhYwIOZ6Ftu8k4uz36GRPLrwaAcd6u1h2TuhkRRaLBmtXpbqw4tWnKn7
+        channel: widget
+
+  # Don't actually build because it is not a .net project
+  build: off
+
+# ------------------------------------------------------------------------------
+# configuration for all other branches. Build in Debug mode. No Deploy
+# ------------------------------------------------------------------------------

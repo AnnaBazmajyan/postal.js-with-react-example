@@ -1,0 +1,10 @@
+[
+  {
+    "id": "app.CoursInformation",
+    "defaultMessage": "Cours information"
+  },
+  {
+    "id": "app.TrainerInformation",
+    "defaultMessage": "Trainer information"
+  }
+]
